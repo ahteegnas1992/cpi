@@ -1,0 +1,47 @@
+steps:
+  integrationArtifactDownload:
+    cpiApiServiceKeyCredentialsId: cpiapi
+    integrationFlowId: new_flow
+    integrationFlowVersion: 1.0.4
+    downloadPath: ./iflows
+  
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: san_apikey
+    integrationFlowId: new_flow
+ 
+  integrationArtifactUpload:
+    cpiApiServiceKeyCredentialsId: san_apikey
+    integrationFlowId: new_flow
+    integrationFlowName: San_QA_Flow
+    packageId: TestIflow
+    filePath: ./iflows/new_flow.zip
+
+  integrationArtifactGetMplStatus:
+    cpiApiServiceKeyCredentialsId: cpiapi
+    integrationFlowId: Trial_Int_Flow
+
+  
+  integrationArtifactGetServiceEndpoint:
+    cpiApiServiceKeyCredentialsId: cpiapi
+    integrationFlowId: Trial_Int_Flow
+  
+  integrationArtifactUpdateConfiguration:
+    cpiApiServiceKeyCredentialsId: cpiapi
+    integrationFlowId: Trial_Int_Flow
+    integrationFlowVersion: 1.0.0
+    parameterKey: Description
+    parameterValue: des
+
+  integrationArtifactResource:
+    cpiApiServiceKeyCredentialsId: cpiapi
+    integrationFlowId: Trial_Int_Flow
+    operation: create
+    resourcePath: ./src/main/resources/scenarioflows/integrationflow/Trial_Int_Flow.iflw
+
+  integrationArtifactUnDeploy:
+    cpiApiServiceKeyCredentialsId: san_apikey
+    integrationFlowId: new_flow
+  
+  
+
+
