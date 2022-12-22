@@ -8,7 +8,7 @@ node() {
   stage('integrationArtifactDownload Command') {
   //  integrationArtifactDownload script: this
    
- withCredentials([string(credentialsId: 'github-token-san', variable: 'github-token-san')]) {
+ withCredentials([string(credentialsId: 'github-token-san', variable: 'Github_CPI_token-sangeetha')]) {
            sh 'cd $WORKSPACE'
         sh 'git checkout main'
       // sh 'git log'
