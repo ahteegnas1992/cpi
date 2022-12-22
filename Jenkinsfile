@@ -6,13 +6,17 @@ node() {
     checkout scm
   }
   stage('integrationArtifactDownload Command') {
-    integrationArtifactDownload script: this
+  //  integrationArtifactDownload script: this
    
- withCredentials([string(credentialsId: 'cpi-git-access-token', variable: 'cpi-git-access-token')]) {
-         sh 'git checkout main'
-         sh 'git add ./iflows/*.zip'
+ withCredentials([string(credentialsId: 'github-token-san', variable: 'github-token-san')]) {
+           sh 'cd $WORKSPACE'
+        sh 'git checkout main'
+       sh 'git log'
+        sh 'touch test.txt'
+         sh 'git add ./test.txt'
          sh 'git commit -m test'
-         sh 'git push'
+   sh 'git push'
+
       }
      
   }
