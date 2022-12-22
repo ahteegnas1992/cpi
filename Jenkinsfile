@@ -6,19 +6,13 @@ node() {
     checkout scm
   }
   stage('integrationArtifactDownload Command') {
-  //  integrationArtifactDownload script: this
-   
-// withCredentials([string(credentialsId: 'github-token-san', variable: 'github-token-san')]) 
-    
+    integrationArtifactDownload script: this
     withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
-           sh 'cd $WORKSPACE'
+        sh 'cd $WORKSPACE'
         sh 'git checkout main'
-      // sh 'git log'
-        sh 'touch test.txt'
-         sh 'git add ./test.txt'
-         sh 'git commit -m test'
-  //sh ' git config --local credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"'
-    sh 'git push'
+        sh 'git add ./iflows/new_flow.zip'
+        sh 'git commit -m test'
+        sh 'git push'
 
       }
      
