@@ -17,8 +17,8 @@ node() {
         sh 'touch test.txt'
          sh 'git add ./test.txt'
          sh 'git commit -m test'
-  sh ' git config --local credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"'
-   sh 'git push'
+  //sh ' git config --local credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"'
+    sh 'git push'
 
       }
      
