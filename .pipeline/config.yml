@@ -16,6 +16,7 @@ steps:
     packageId: TestIflow
     filePath: ./iflows/new_flow.zip
 
+
   integrationArtifactGetMplStatus:
     cpiApiServiceKeyCredentialsId: cpiapi
     integrationFlowId: Trial_Int_Flow
