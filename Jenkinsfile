@@ -7,7 +7,7 @@ node() {
        sh 'echo $test'
   }
   stage('integrationArtifactDownload Command') {
-    integrationArtifactDeploy script: this
+    integrationArtifactDeploy script: $test
  
   /* withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
         sh 'cd $WORKSPACE'
