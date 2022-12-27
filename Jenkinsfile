@@ -15,8 +15,8 @@ node() {
         sh 'git push'
   integrationArtifactUpload script: this
   integrationArtifactDeploy script: this 
-  */
+ 
       }
-     
+      */
   }
 }
