@@ -4,9 +4,11 @@ node() {
   stage('init') {
     deleteDir()
     checkout scm
+       sh 'echo $test'
   }
   stage('integrationArtifactDownload Command') {
     integrationArtifactDeploy script: this
+ 
   /* withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
         sh 'cd $WORKSPACE'
         sh 'git checkout main'
