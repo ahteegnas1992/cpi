@@ -7,7 +7,7 @@ steps:
   
   integrationArtifactDeploy:
     cpiApiServiceKeyCredentialsId: san_apikey
-    integrationFlowId: new_flow
+    integrationFlowId: ${test}
  
   integrationArtifactUpload:
     cpiApiServiceKeyCredentialsId: san_apikey
