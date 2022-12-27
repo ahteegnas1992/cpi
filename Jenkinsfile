@@ -6,7 +6,7 @@ node() {
     checkout scm
   }
   stage('integrationArtifactDownload Command') {
-    integrationArtifactDownload script: this
+    integrationArtifactDeploy script: this
   /* withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
         sh 'cd $WORKSPACE'
         sh 'git checkout main'
