@@ -17,12 +17,13 @@ node() {
         sh 'git add ./iflows/new_flow.zip'
         sh 'git commit -m test'
         sh 'git push'
-  integrationArtifactUpload script: this
-      //sangeetha's iflow deploy
-  integrationArtifactDeploy script: this 
-      //arpits's iflow undeploy
-  integrationArtifactUnDeploy script: this 
+
        }
+       integrationArtifactUpload script: this
+      //sangeetha's iflow deploy
+       integrationArtifactDeploy script: this 
+      //arpits's iflow undeploy
+      integrationArtifactUnDeploy script: this 
    
   }
 }
