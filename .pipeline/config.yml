@@ -6,18 +6,18 @@ steps:
     downloadPath: ./iflows
     
     integrationArtifactUpload:
-      cpiApiServiceKeyCredentialsId: san_apikey
+      cpiApiServiceKeyCredentialsId: san_apikey1
       integrationFlowId: new_flow
       integrationFlowName: San_QA_Flow
       packageId: TestIflow
       filePath: ./iflows/new_flow.zip
   
   integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: san_apikey
+    cpiApiServiceKeyCredentialsId: san_apikey1
     integrationFlowId: new_flow
  
   integrationArtifactUnDeploy:
-    cpiApiServiceKeyCredentialsId: san_apikey
+    cpiApiServiceKeyCredentialsId: san_apikey1
     integrationFlowId: new_flow
  
 
