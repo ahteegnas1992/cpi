@@ -5,7 +5,7 @@ steps:
     integrationFlowVersion: 1.0.4
     downloadPath: ./iflows
     
-    integrationArtifactUpload:
+  integrationArtifactUpload:
       cpiApiServiceKeyCredentialsId: san_apikey1
       integrationFlowId: new_flow
       integrationFlowName: San_QA_Flow
