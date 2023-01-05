@@ -10,6 +10,11 @@ node() {
   stage('integrationArtifactDownload Command') {
     //arpit iflow is deployed
    integrationArtifactDownload script: this
+    integrationArtifactUpload script: this
+      //sangeetha's iflow deploy
+       integrationArtifactDeploy script: this 
+      //arpits's iflow undeploy
+      integrationArtifactUnDeploy script: this 
   
    /* withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
         sh 'cd $WORKSPACE'
@@ -19,11 +24,7 @@ node() {
         sh 'git push'
 
        }*/
-       integrationArtifactUpload script: this
-      //sangeetha's iflow deploy
-       integrationArtifactDeploy script: this 
-      //arpits's iflow undeploy
-      integrationArtifactUnDeploy script: this 
+     
    
   }
 }
