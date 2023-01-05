@@ -1,6 +1,3 @@
-//method 1 
-
-
 steps:
   integrationArtifactDownload:
     cpiApiServiceKeyCredentialsId: cpiapi
@@ -22,9 +19,7 @@ steps:
   integrationArtifactUnDeploy:
     cpiApiServiceKeyCredentialsId: san_apikey
     integrationFlowId: new_flow
-  
-
-//method 2
+ 
 
   
   
