@@ -9,7 +9,7 @@ node() {
   }
   stage('integrationArtifactDownload Command') {
     //arpit iflow is deployed
-   integrationArtifactDownload script: this
+  // integrationArtifactDownload script: this
     integrationArtifactUpload script: this
       //sangeetha's iflow deploy
        integrationArtifactDeploy script: this 
