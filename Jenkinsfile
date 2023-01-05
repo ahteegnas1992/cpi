@@ -8,13 +8,17 @@ node() {
        sh 'echo $test'
   }
   stage('integrationArtifactDownload Command') {
-    //arpit iflow is deployed
-  // integrationArtifactDownload script: this
+       //arpit iflow is deployed
+  integrationArtifactDownload script: this
+  }
+  
+  stage('integrationArtifactupload&deploy Command') {
+  //upload to sangeetha's iflow
     integrationArtifactUpload script: this
       //sangeetha's iflow deploy
        integrationArtifactDeploy script: this 
       //arpits's iflow undeploy
-      integrationArtifactUnDeploy script: this 
+      //integrationArtifactUnDeploy script: this 
   
    /* withCredentials([gitUsernamePassword(credentialsId: 'github-token-san', gitToolName: 'Default')]) {
         sh 'cd $WORKSPACE'
