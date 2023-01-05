@@ -19,9 +19,3 @@ steps:
   integrationArtifactUnDeploy:
     cpiApiServiceKeyCredentialsId: san_apikey1
     integrationFlowId: new_flow
- 
-
-  
-  
-
-
