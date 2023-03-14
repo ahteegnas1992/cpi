@@ -1,0 +1,24 @@
+name : hello
+on:
+  push:
+    branches:
+     -main
+  pull_request:
+    branches:
+      -main
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Project "Piper" Action
+        uses: SAP/project-piper-action@1.0
+        with:
+           command: integrationArtifactDownload
+        
+
+    
+  
+  
+  
