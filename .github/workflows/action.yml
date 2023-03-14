@@ -14,17 +14,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: json  
-        run: |
-          echo '${{ secrets.CPIAPI }}' > test.json
-          cat test.json
-           
+     
       - name: Project "Piper" Action
         uses: SAP/project-piper-action@1.0
         with:
           command: integrationArtifactDownload
-          flags: api.json
-           
         
 
     
