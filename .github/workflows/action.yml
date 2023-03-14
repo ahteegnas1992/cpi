@@ -23,7 +23,7 @@ jobs:
         uses: SAP/project-piper-action@1.0
         with:
           command: integrationArtifactDownload
-          flags: test.json
+          flags: api.json
            
         
 
