@@ -1,0 +1,9 @@
+{
+    "oauth": {
+        "clientid": "sb-22ed1053-407c-4e44-89c6-3506e78edb83!b110454|it!b26655",
+        "clientsecret": "a772c840-5a94-4097-b9db-64a2a2250522$c7-Tl7Vii2EVwrQ7HAmtYAG8Y5Sd_FHPSdWLYYwNxK4=",
+        "url": "https://btp-cpi-kz5q11ar.it-cpitrial05.cfapps.us10-001.hana.ondemand.com",
+        "createdate": "2022-10-18T07:38:58.199Z",
+        "tokenurl": "https://btp-cpi-kz5q11ar.authentication.us10.hana.ondemand.com/oauth/token"
+    }
+}
