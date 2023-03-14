@@ -17,8 +17,9 @@ jobs:
       - name: Project "Piper" Action
         uses: SAP/project-piper-action@1.0
         with:
-           command: integrationArtifactDownload
            json: ${{ secrets.CPIAPI }}
+           command: integrationArtifactDownload
+           
         
 
     
