@@ -14,9 +14,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        
       - name: Project "Piper" Action
         uses: SAP/project-piper-action@1.0
         with:
+           run:  echo "${{ secrets.CPIAPI}}"
            CPIAPI: ${{ secrets.CPIAPI }}
            command: integrationArtifactDownload
            
