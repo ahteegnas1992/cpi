@@ -17,7 +17,7 @@ jobs:
       - name: json  
         run: |
           echo '${{ secrets.CPIAPI }}' > test.json
-          echo test.json
+          cat test.json
            
       - name: Project "Piper" Action
         uses: SAP/project-piper-action@1.0
