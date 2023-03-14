@@ -16,7 +16,8 @@ jobs:
         uses: actions/checkout@v3
       - name: json  
         run: |
-          echo '${{ secrets.ENVCPIAPI }}' > test.json
+          echo '${{ secrets.CPIAPI }}' > test.json
+          echo test.json
            
       - name: Project "Piper" Action
         uses: SAP/project-piper-action@1.0
