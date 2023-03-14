@@ -1,6 +1,6 @@
 steps:
   integrationArtifactDownload:
-    cpiApiServiceKeyCredentialsId: cpiapi
+    cpiApiServiceKeyCredentialsId: CPIAPI
     integrationFlowId: new_flow
     integrationFlowVersion: 1.0.4
     downloadPath: ./iflows
